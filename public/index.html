@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <script src='https://cdn.jsdelivr.net/riot/3.4.1/riot+compiler.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/riot-route/3.1.1/route.min.js'></script>
+
+        <!-- Components -->
+        <script src='app/app.js' type='riot/tag'></script>
+        <script src='app/components/home/home.component.js' type='riot/tag'></script>
+        <script src='app/components/navbar/navbar.component.js' type='riot/tag'></script>
+        <script src='app/components/about/about.component.js' type='riot/tag'></script>
+        <!-- Services -->
+        <script src='app/services/event.service.js'></script>
+        <script src='app/services/request.service.js'></script>
+        <script src='app/services/router.service.js'></script>
+        <script src='app/services/url.service.js'></script>
+    </head>
+    <body>
+        <myi-app></myi-app>
+        <script>
+            riot.mount('*');
+        </script>
+    </body>
+</html>
